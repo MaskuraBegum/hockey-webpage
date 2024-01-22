@@ -5,16 +5,77 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Hockey-webpage</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;700&display=swap" rel="stylesheet">
+
     <link href="https://cdn.jsdelivr.net/npm/daisyui@4.6.0/dist/full.min.css" rel="stylesheet" type="text/css" />
     <script src="https://cdn.tailwindcss.com"></script>
+    <!-- coustomaization -->
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        clifford: '#da373d',
+                        'color-primary': 'rgba(19, 19, 24, 0.60)',
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        .font-manrope {
+            font-family: 'Manrope', sans-serif;
+        }
+    </style>
 </head>
 
-<body>
+<body class="font-manrope">
     <header>
 
     </header>
-    <main>
-
+    <main class="container mx-auto text-center">
+        <!-- club section -->
+        <section class=" px-8">
+            <div class=" my-32 space-y-6 ">
+                <h1 class="text-xl lg:text-4xl font-extrabold">Professional Hockeys Club</h1>
+                <p class=" lg:w-[600px] w-75% mx-auto">Dit amet consectetur. Condimentum dignissim adipiscing aliquam turpis
+                    placerat dolor. Purus urna in sit
+                    nullam proin. </p>
+            </div>
+            <div class="flex flex-col lg:flex-row my-20 gap-8">
+                <div class="space-y-6 ">
+                    <div class="radial-progress text-red-600" style="--value:87;" role="progressbar"><span
+                            class="text-black font-bold">87%</span></div>
+                    <h3 class="text-xl font-semibold">Prayer Facility</h3>
+                    <p class="text-base text-color-primary w-64 mx-auto">Amet consectetur Condimentum dignissim adipiscing .</p>
+                </div>
+                <div class="space-y-6">
+                    <div class="radial-progress text-green-300" style="--value:95;" role="progressbar"><span
+                            class="text-black font-bold">95%</span></div>
+                    <h3 class="text-xl font-semibold">Prayer Facility</h3>
+                    <p class="text-base text-color-primary w-64 mx-auto">Amet consectetur. Condimentum dignissim adipiscing .</p>
+                </div>
+                <div class="space-y-6">
+                    <div class="radial-progress text-yellow-300" style="--value:90;" role="progressbar"><span
+                            class="text-black font-bold">90%</span></div>
+                    <h3 class="text-xl font-semibold">Prayer Facility</h3>
+                    <p class="text-base text-color-primary w-64 mx-auto">Amet consectetur. Condimentum dignissim adipiscing .</p>
+                </div>
+                <div class="space-y-6">
+                    <div class="radial-progress text-blue-400" style="--value:80;" role="progressbar"><span
+                            class="text-black font-bold">80%</span></div>
+                    <h3 class="text-xl font-semibold">Prayer Facility</h3>
+                    <p class="text-base text-color-primary w-64 mx-auto">Amet consectetur. Condimentum dignissim adipiscing .</p>
+                </div>
+            </div>
+        </section>
+        <!-- program section -->
+        <section>
+            
+        </section>
     </main>
     <footer>
 
